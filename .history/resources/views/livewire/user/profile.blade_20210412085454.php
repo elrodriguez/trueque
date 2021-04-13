@@ -1,0 +1,19 @@
+<div>
+    <section class="page-banner-110">
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="{{ 'https://ui-avatars.com/api/?name='.Auth::user()->name.'&size=72' }}" alt="" width="72" height="72">
+          <h2>{{ Auth::user()->name }}</h2>
+          <p class="lead">{{ Auth::user()->email }}</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="mb-3">Billing address</h4>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your cart</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                  </h4>
+            </div>
+    </section>
+</div>
