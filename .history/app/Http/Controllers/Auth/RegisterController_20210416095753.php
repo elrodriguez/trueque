@@ -32,6 +32,6 @@ class RegisterController extends Controller
 
         $user->assignRole('Customer');
 
-        return redirect('/email/verify');
+        return redirect('/home');
     }
 }

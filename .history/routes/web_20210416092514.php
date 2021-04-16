@@ -31,5 +31,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::group(['prefix' => 'user'], function() {
     Route::middleware(['middleware' => 'role_or_permission:usuario_productos_nuevo'])->get('product', function () {
         return view('product.user-product-register');
-    })->name('user_product_register');
+    })->name('users');
 });

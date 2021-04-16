@@ -7,15 +7,14 @@
                    <div class="login-registration-style-2 mt-50">
                        <h1 class="heading-4 font-weight-500 title primary-btn" style="padding: 10px;"><i class="mdi mdi-account-plus"></i> Crea una cuenta con</h1>
                        <div class="login-registration-form pt-10">
-                           <form class="needs-validation" novalidate method="POST" action="{{ route('register') }}">
+                           <form class="needs-validation" novalidate method="POST" action="{{ route('public_user_create') }}">
                                 @csrf
-                                <input type="hidden" name="f79sjyr8" value="9kcs6od4">
                                 <div class="single-form form-default form-border">
                                     <label>Nombre Completo</label>
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="form-input">
-                                                <input type="text" placeholder="Nombres" id="name" name="name" value="{{ old('name') }}" required autofocus autocomplete="name">
+                                                <input type="text" placeholder="Nombres" id="name" name="name" value="old('name')" required autofocus autocomplete="name">
                                                 <i class="mdi mdi-account"></i>
                                             </div>
                                             @error('name')
@@ -32,7 +31,7 @@
                                 <div class="single-form form-default form-border">
                                         <label>Correo Electrónico</label>
                                         <div class="form-input">
-                                            <input type="email" placeholder="usuario@email.com" id="email" name="email" value="{{ old('email') }}" required>
+                                            <input type="email" placeholder="usuario@email.com" id="email" name="email" value="old('email')" required>
                                             <i class="mdi mdi-email"></i>
                                         </div>
                                         @error('email')

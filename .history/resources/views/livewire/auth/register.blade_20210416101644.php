@@ -9,7 +9,7 @@
                        <div class="login-registration-form pt-10">
                            <form class="needs-validation" novalidate method="POST" action="{{ route('register') }}">
                                 @csrf
-                                <input type="hidden" name="f79sjyr8" value="9kcs6od4">
+                                <input type="hidden" name="my_user" value="cs">
                                 <div class="single-form form-default form-border">
                                     <label>Nombre Completo</label>
                                     <div class="row">

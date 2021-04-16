@@ -29,7 +29,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::group(['prefix' => 'user'], function() {
-    Route::middleware(['middleware' => 'role_or_permission:usuario_productos_nuevo'])->get('product', function () {
-        return view('product.user-product-register');
-    })->name('user_product_register');
+    Route::middleware(['middleware' => 'role_or_permission:usuarios'])->get('users', function () {
+        return view('master.users');
+    })->name('users');
 });
